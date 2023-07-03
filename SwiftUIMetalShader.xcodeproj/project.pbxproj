@@ -14,6 +14,14 @@
 		71C893FE2A53223400EDAF2F /* SwiftUIMetalShaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C893FD2A53223400EDAF2F /* SwiftUIMetalShaderTests.swift */; };
 		71C894082A53223400EDAF2F /* SwiftUIMetalShaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C894072A53223400EDAF2F /* SwiftUIMetalShaderUITests.swift */; };
 		71C8940A2A53223400EDAF2F /* SwiftUIMetalShaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C894092A53223400EDAF2F /* SwiftUIMetalShaderUITestsLaunchTests.swift */; };
+		71C8941A2A5324FD00EDAF2F /* DistortionEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 71C894192A5324FD00EDAF2F /* DistortionEffect.metal */; };
+		71C8941D2A5329EF00EDAF2F /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C8941C2A5329EF00EDAF2F /* WaveView.swift */; };
+		71C894212A532BE600EDAF2F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C894202A532BE600EDAF2F /* ContentViewModel.swift */; };
+		71C894232A53326000EDAF2F /* LayerEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 71C894222A53326000EDAF2F /* LayerEffect.metal */; };
+		71C894252A5332DA00EDAF2F /* ColorEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 71C894242A5332DA00EDAF2F /* ColorEffect.metal */; };
+		71C894292A5333B200EDAF2F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C894282A5333B200EDAF2F /* GradientView.swift */; };
+		71C8942B2A53393500EDAF2F /* GreenMountainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C8942A2A53393500EDAF2F /* GreenMountainView.swift */; };
+		71C8942E2A533C5500EDAF2F /* ReadME.md in Resources */ = {isa = PBXBuildFile; fileRef = 71C8942D2A533C5500EDAF2F /* ReadME.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		71C894032A53223400EDAF2F /* SwiftUIMetalShaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMetalShaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C894072A53223400EDAF2F /* SwiftUIMetalShaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMetalShaderUITests.swift; sourceTree = "<group>"; };
 		71C894092A53223400EDAF2F /* SwiftUIMetalShaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMetalShaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71C894192A5324FD00EDAF2F /* DistortionEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DistortionEffect.metal; sourceTree = "<group>"; };
+		71C8941C2A5329EF00EDAF2F /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		71C894202A532BE600EDAF2F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		71C894222A53326000EDAF2F /* LayerEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LayerEffect.metal; sourceTree = "<group>"; };
+		71C894242A5332DA00EDAF2F /* ColorEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorEffect.metal; sourceTree = "<group>"; };
+		71C894282A5333B200EDAF2F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		71C8942A2A53393500EDAF2F /* GreenMountainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenMountainView.swift; sourceTree = "<group>"; };
+		71C8942D2A533C5500EDAF2F /* ReadME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadME.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,12 @@
 		71C893EB2A53223200EDAF2F /* SwiftUIMetalShader */ = {
 			isa = PBXGroup;
 			children = (
-				71C893EC2A53223200EDAF2F /* SwiftUIMetalShaderApp.swift */,
-				71C893EE2A53223200EDAF2F /* ContentView.swift */,
-				71C893F02A53223400EDAF2F /* Assets.xcassets */,
+				71C8942C2A533C3500EDAF2F /* Resources */,
+				71C894182A5322EC00EDAF2F /* Application */,
+				71C894172A5322DC00EDAF2F /* Views */,
+				71C894162A5322D200EDAF2F /* Shaders */,
 				71C893F22A53223400EDAF2F /* Preview Content */,
+				71C8942D2A533C5500EDAF2F /* ReadME.md */,
 			);
 			path = SwiftUIMetalShader;
 			sourceTree = "<group>";
@@ -125,6 +143,76 @@
 				71C894092A53223400EDAF2F /* SwiftUIMetalShaderUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIMetalShaderUITests;
+			sourceTree = "<group>";
+		};
+		71C894162A5322D200EDAF2F /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				71C894192A5324FD00EDAF2F /* DistortionEffect.metal */,
+				71C894222A53326000EDAF2F /* LayerEffect.metal */,
+				71C894242A5332DA00EDAF2F /* ColorEffect.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		71C894172A5322DC00EDAF2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71C894272A53336B00EDAF2F /* Color */,
+				71C894262A53335B00EDAF2F /* Layer */,
+				71C8941E2A532BC300EDAF2F /* Main */,
+				71C8941B2A5329D700EDAF2F /* Distortion */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71C894182A5322EC00EDAF2F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				71C893EC2A53223200EDAF2F /* SwiftUIMetalShaderApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		71C8941B2A5329D700EDAF2F /* Distortion */ = {
+			isa = PBXGroup;
+			children = (
+				71C8941C2A5329EF00EDAF2F /* WaveView.swift */,
+			);
+			path = Distortion;
+			sourceTree = "<group>";
+		};
+		71C8941E2A532BC300EDAF2F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				71C894202A532BE600EDAF2F /* ContentViewModel.swift */,
+				71C893EE2A53223200EDAF2F /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		71C894262A53335B00EDAF2F /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				71C8942A2A53393500EDAF2F /* GreenMountainView.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		71C894272A53336B00EDAF2F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				71C894282A5333B200EDAF2F /* GradientView.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		71C8942C2A533C3500EDAF2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71C893F02A53223400EDAF2F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +321,7 @@
 			files = (
 				71C893F42A53223400EDAF2F /* Preview Assets.xcassets in Resources */,
 				71C893F12A53223400EDAF2F /* Assets.xcassets in Resources */,
+				71C8942E2A533C5500EDAF2F /* ReadME.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +346,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C894232A53326000EDAF2F /* LayerEffect.metal in Sources */,
 				71C893EF2A53223200EDAF2F /* ContentView.swift in Sources */,
+				71C8941A2A5324FD00EDAF2F /* DistortionEffect.metal in Sources */,
 				71C893ED2A53223200EDAF2F /* SwiftUIMetalShaderApp.swift in Sources */,
+				71C8941D2A5329EF00EDAF2F /* WaveView.swift in Sources */,
+				71C894212A532BE600EDAF2F /* ContentViewModel.swift in Sources */,
+				71C894292A5333B200EDAF2F /* GradientView.swift in Sources */,
+				71C894252A5332DA00EDAF2F /* ColorEffect.metal in Sources */,
+				71C8942B2A53393500EDAF2F /* GreenMountainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

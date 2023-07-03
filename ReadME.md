@@ -7,6 +7,13 @@ Example Project of how to use Metal Shader with SwiftUI
 - Distortion Effect
 - Color Effect
 
+# 📺 Demo
+Please note that the `.gif` files have low frame rate due to compression and accessibility of demo.
+
+|  |  |  |
+:-------------------------:|:-------------------------:|:-------------------------:
+![](SwiftUIMetalShader/Resources/Demos/wave.gif) | ![](SwiftUIMetalShader/Resources/Demos/wave.gif) | ![](SwiftUIMetalShader/Resources/Demos/wave.gif)
+
 ## Requirements
 - Xcode (version 15.0 beta or later)
 - iOS Deployment 17.0

@@ -22,6 +22,9 @@
 		71C894292A5333B200EDAF2F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C894282A5333B200EDAF2F /* GradientView.swift */; };
 		71C8942B2A53393500EDAF2F /* GreenMountainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C8942A2A53393500EDAF2F /* GreenMountainView.swift */; };
 		71C8942E2A533C5500EDAF2F /* ReadME.md in Resources */ = {isa = PBXBuildFile; fileRef = 71C8942D2A533C5500EDAF2F /* ReadME.md */; };
+		71C894332A533F2800EDAF2F /* gradient.gif in Resources */ = {isa = PBXBuildFile; fileRef = 71C894302A533F2800EDAF2F /* gradient.gif */; };
+		71C894342A533F2800EDAF2F /* greenmountain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 71C894312A533F2800EDAF2F /* greenmountain.gif */; };
+		71C894352A533F2800EDAF2F /* wave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 71C894322A533F2800EDAF2F /* wave.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		71C894282A5333B200EDAF2F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		71C8942A2A53393500EDAF2F /* GreenMountainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenMountainView.swift; sourceTree = "<group>"; };
 		71C8942D2A533C5500EDAF2F /* ReadME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadME.md; sourceTree = "<group>"; };
+		71C894302A533F2800EDAF2F /* gradient.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gradient.gif; sourceTree = "<group>"; };
+		71C894312A533F2800EDAF2F /* greenmountain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = greenmountain.gif; sourceTree = "<group>"; };
+		71C894322A533F2800EDAF2F /* wave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,9 +216,20 @@
 		71C8942C2A533C3500EDAF2F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				71C8942F2A533EF700EDAF2F /* Demos */,
 				71C893F02A53223400EDAF2F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		71C8942F2A533EF700EDAF2F /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				71C894322A533F2800EDAF2F /* wave.gif */,
+				71C894302A533F2800EDAF2F /* gradient.gif */,
+				71C894312A533F2800EDAF2F /* greenmountain.gif */,
+			);
+			path = Demos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +336,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C894342A533F2800EDAF2F /* greenmountain.gif in Resources */,
 				71C893F42A53223400EDAF2F /* Preview Assets.xcassets in Resources */,
 				71C893F12A53223400EDAF2F /* Assets.xcassets in Resources */,
+				71C894332A533F2800EDAF2F /* gradient.gif in Resources */,
+				71C894352A533F2800EDAF2F /* wave.gif in Resources */,
 				71C8942E2A533C5500EDAF2F /* ReadME.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

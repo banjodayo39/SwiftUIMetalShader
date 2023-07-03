@@ -12,7 +12,8 @@ class ContentViewModel: ObservableObject {
     var navigationLinks: [(view: AnyView, title: String)] {
         [
             (view: AnyView(WaveView()), title: "Wave"),
-            (view: AnyView(GradientViewUI()), title: "Gradient")
+            (view: AnyView(GradientViewUI()), title: "Gradient"),
+            (view: AnyView(GreenMountainView()), title: "Green Mountain")
         ]
     }
 }

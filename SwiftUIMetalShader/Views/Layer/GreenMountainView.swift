@@ -14,7 +14,7 @@ struct GreenMountainView: View {
         VStack {
             TimelineView(.animation) { context in
                 let elapsedTime = Date().timeIntervalSince(startDate)
-                let time = fmod(elapsedTime, 10) // Keep time value between 0 to 10
+                let time = fmod(elapsedTime, 10) 
 
                 Image("img-green-mountain")
                     .resizable()

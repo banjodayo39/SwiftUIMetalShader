@@ -12,7 +12,7 @@ Please note that the `.gif` files have low frame rate due to compression and acc
 
 |  |  |  |
 :-------------------------:|:-------------------------:|:-------------------------:
-![](SwiftUIMetalShader/Resources/Demos/wave.gif) | ![](SwiftUIMetalShader/Resources/Demos/wave.gif) | ![](SwiftUIMetalShader/Resources/Demos/wave.gif)
+![](SwiftUIMetalShader/Resources/Demos/wave.gif) | ![](SwiftUIMetalShader/Resources/Demos/gradient.gif) | ![](SwiftUIMetalShader/Resources/Demos/greenmountain.gif)
 
 ## Requirements
 - Xcode (version 15.0 beta or later)

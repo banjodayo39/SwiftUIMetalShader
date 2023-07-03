@@ -90,6 +90,7 @@
 		71C893E02A53223200EDAF2F = {
 			isa = PBXGroup;
 			children = (
+				71C8942D2A533C5500EDAF2F /* ReadME.md */,
 				71C893EB2A53223200EDAF2F /* SwiftUIMetalShader */,
 				71C893FC2A53223400EDAF2F /* SwiftUIMetalShaderTests */,
 				71C894062A53223400EDAF2F /* SwiftUIMetalShaderUITests */,
@@ -115,7 +116,6 @@
 				71C894172A5322DC00EDAF2F /* Views */,
 				71C894162A5322D200EDAF2F /* Shaders */,
 				71C893F22A53223400EDAF2F /* Preview Content */,
-				71C8942D2A533C5500EDAF2F /* ReadME.md */,
 			);
 			path = SwiftUIMetalShader;
 			sourceTree = "<group>";
